@@ -31,6 +31,7 @@ class MainTabBarViewController: UITabBarController {
         profile.tabBarItem.image = UIImage(named: "profile")
         
         setViewControllers([recipe, promo, home, cart, profile], animated: true)
+        selectedIndex = 2
     }
     
 }
