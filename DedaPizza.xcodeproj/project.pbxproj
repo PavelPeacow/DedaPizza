@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56F5150290E7D6A00449C6C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F514F290E7D6A00449C6C /* CollectionViewCell.swift */; };
 		B5B98D86290C226B0090AC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B98D85290C226B0090AC35 /* AppDelegate.swift */; };
 		B5B98D88290C226B0090AC35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B98D87290C226B0090AC35 /* SceneDelegate.swift */; };
 		B5B98D8F290C226C0090AC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B98D8E290C226C0090AC35 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B56F514F290E7D6A00449C6C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B5B98D82290C226B0090AC35 /* DedaPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DedaPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B98D85290C226B0090AC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B98D87290C226B0090AC35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B5B98DA7290C37030090AC35 /* ProductCollectionViewCell.swift */,
+				B56F514F290E7D6A00449C6C /* CollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				B5B98D9B290C24090090AC35 /* MainTabBarViewController.swift in Sources */,
 				B5B98D9F290C24BA0090AC35 /* PromoViewController.swift in Sources */,
 				B5B98D86290C226B0090AC35 /* AppDelegate.swift in Sources */,
+				B56F5150290E7D6A00449C6C /* CollectionViewCell.swift in Sources */,
 				B5B98DA3290C24CB0090AC35 /* CartViewController.swift in Sources */,
 				B5B98D88290C226B0090AC35 /* SceneDelegate.swift in Sources */,
 				B5B98DA5290C24D20090AC35 /* ProfileViewController.swift in Sources */,
