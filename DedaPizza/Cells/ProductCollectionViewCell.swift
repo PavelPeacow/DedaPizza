@@ -13,7 +13,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     private let productImage: UIImageView = {
         let image = UIImageView(image: UIImage(named: "pizza"))
-        image.contentMode = .scaleToFill
+        image.contentMode = .scaleAspectFit
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -41,7 +41,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         label.numberOfLines = 0
         label.font = UIFont(name: "AvenirNext-Italic", size: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "399\nза шт."
+        label.text = "399 руб.\nза шт."
         return label
     }()
     
@@ -49,9 +49,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
         var config = UIButton.Configuration.bordered()
         config.baseBackgroundColor = UIColor(red: 0.033, green: 0.567, blue: 0.054, alpha: 1)
         config.baseForegroundColor = .black
+        config.cornerStyle = .capsule
         
         let btn = UIButton(configuration: config)
-        btn.layer.cornerRadius = 35
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("Добавить", for: .normal)
         return btn
@@ -79,21 +79,22 @@ class ProductCollectionViewCell: UICollectionViewCell {
 extension ProductCollectionViewCell {
     func setConstraints() {
         NSLayoutConstraint.activate([
-            productTitle.topAnchor.constraint(equalTo: contentView.topAnchor),
+            productTitle.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
             productTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -14),
             productTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 14),
             
-            productImage.topAnchor.constraint(equalTo: productTitle.bottomAnchor, constant: 8),
-            productImage.widthAnchor.constraint(equalToConstant: 120),
-            productImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 14),
-            productImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
+            productImage.topAnchor.constraint(equalTo: productTitle.bottomAnchor, constant: 5),
+            productImage.widthAnchor.constraint(equalToConstant: 140),
+            productImage.heightAnchor.constraint(equalToConstant: 140),
+            productImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
+            
             
             productSubtitle.topAnchor.constraint(equalTo: productTitle.bottomAnchor, constant: 0),
             productSubtitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             productSubtitle.leadingAnchor.constraint(equalTo: productImage.trailingAnchor, constant: 20),
             productSubtitle.bottomAnchor.constraint(equalTo: productAddBtn.topAnchor, constant: -10),
             
-            productPrice.trailingAnchor.constraint(equalTo: productAddBtn.leadingAnchor, constant: -7),
+            productPrice.leadingAnchor.constraint(equalTo: productImage.trailingAnchor, constant: 20),
             productPrice.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             
             productAddBtn.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),

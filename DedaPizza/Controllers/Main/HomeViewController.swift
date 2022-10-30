@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
 
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 325, height: 150)
+        layout.itemSize = CGSize(width: 350, height: 180)
         layout.scrollDirection = .vertical
         
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)

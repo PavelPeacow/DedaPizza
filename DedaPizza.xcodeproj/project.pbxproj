@@ -47,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5B60A2B290E4B5700852368 /* Resoureses */ = {
+			isa = PBXGroup;
+			children = (
+				B5B98D8E290C226C0090AC35 /* Assets.xcassets */,
+			);
+			path = Resoureses;
+			sourceTree = "<group>";
+		};
 		B5B98D79290C226B0090AC35 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +76,10 @@
 			children = (
 				B5B98D85290C226B0090AC35 /* AppDelegate.swift */,
 				B5B98D87290C226B0090AC35 /* SceneDelegate.swift */,
+				B5B98D90290C226C0090AC35 /* LaunchScreen.storyboard */,
 				B5B98DA9290C37080090AC35 /* Cells */,
 				B5B98D99290C23D30090AC35 /* Controllers */,
-				B5B98D8E290C226C0090AC35 /* Assets.xcassets */,
-				B5B98D90290C226C0090AC35 /* LaunchScreen.storyboard */,
+				B5B60A2B290E4B5700852368 /* Resoureses */,
 				B5B98D93290C226C0090AC35 /* Info.plist */,
 			);
 			path = DedaPizza;
