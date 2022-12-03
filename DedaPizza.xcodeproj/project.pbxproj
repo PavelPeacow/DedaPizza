@@ -120,33 +120,24 @@
 				B5D859B6293B499A00D89DD2 /* Extension */,
 				B5D859BB293B499A00D89DD2 /* Helpers */,
 				B5D859BD293B499A00D89DD2 /* Subclasses */,
-				B5B98D99290C23D30090AC35 /* Controllers */,
+				B5B98D99290C23D30090AC35 /* Core */,
 				B5B60A2B290E4B5700852368 /* Resoureses */,
 				B5B98D93290C226C0090AC35 /* Info.plist */,
 			);
 			path = DedaPizza;
 			sourceTree = "<group>";
 		};
-		B5B98D99290C23D30090AC35 /* Controllers */ = {
+		B5B98D99290C23D30090AC35 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B5B98D9A290C24090090AC35 /* MainTabBarViewController.swift */,
-				B5B98DA6290C24E40090AC35 /* Main */,
+				B5D85A41293B4F0B00D89DD2 /* TabBar */,
+				B5D859D5293B4AA600D89DD2 /* HomeTab */,
+				B5D859D6293B4AB300D89DD2 /* PromoTab */,
+				B5D859D8293B4AC300D89DD2 /* CartTab */,
+				B5D85A34293B4BFC00D89DD2 /* ProfileTab */,
+				B5D859D7293B4AB900D89DD2 /* AboutTab */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B5B98DA6290C24E40090AC35 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				B5D859D7293B4AB900D89DD2 /* About */,
-				B5D859D6293B4AB300D89DD2 /* Promo */,
-				B5D859D5293B4AA600D89DD2 /* Home */,
-				B5D859BF293B499A00D89DD2 /* LoginScreen */,
-				B5D85A34293B4BFC00D89DD2 /* Profile */,
-				B5D859D8293B4AC300D89DD2 /* Cart */,
-			);
-			path = Main;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		B5D859B6293B499A00D89DD2 /* Extension */ = {
@@ -173,14 +164,14 @@
 			path = Subclasses;
 			sourceTree = "<group>";
 		};
-		B5D859BF293B499A00D89DD2 /* LoginScreen */ = {
+		B5D859BF293B499A00D89DD2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				B5D859D2293B4A5400D89DD2 /* Views */,
 				B5D859D4293B4A5F00D89DD2 /* Controller */,
 				B5D859D3293B4A5800D89DD2 /* ViewModel */,
 			);
-			path = LoginScreen;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		B5D859D1293B4A1800D89DD2 /* App */ = {
@@ -218,38 +209,38 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		B5D859D5293B4AA600D89DD2 /* Home */ = {
+		B5D859D5293B4AA600D89DD2 /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
 				B5D85A37293B4CC900D89DD2 /* Controller */,
 				B5D85A36293B4CC300D89DD2 /* Cell */,
 			);
-			path = Home;
+			path = HomeTab;
 			sourceTree = "<group>";
 		};
-		B5D859D6293B4AB300D89DD2 /* Promo */ = {
+		B5D859D6293B4AB300D89DD2 /* PromoTab */ = {
 			isa = PBXGroup;
 			children = (
 				B5D85A38293B4CCD00D89DD2 /* Controller */,
 				B5D85A35293B4CBE00D89DD2 /* Cell */,
 			);
-			path = Promo;
+			path = PromoTab;
 			sourceTree = "<group>";
 		};
-		B5D859D7293B4AB900D89DD2 /* About */ = {
+		B5D859D7293B4AB900D89DD2 /* AboutTab */ = {
 			isa = PBXGroup;
 			children = (
 				B5D85A39293B4CD400D89DD2 /* Controller */,
 			);
-			path = About;
+			path = AboutTab;
 			sourceTree = "<group>";
 		};
-		B5D859D8293B4AC300D89DD2 /* Cart */ = {
+		B5D859D8293B4AC300D89DD2 /* CartTab */ = {
 			isa = PBXGroup;
 			children = (
-				B5B98DA2290C24CB0090AC35 /* CartViewController.swift */,
+				B5D85A42293B4F1A00D89DD2 /* Controller */,
 			);
-			path = Cart;
+			path = CartTab;
 			sourceTree = "<group>";
 		};
 		B5D859D9293B4B5A00D89DD2 /* Main */ = {
@@ -275,11 +266,11 @@
 			isa = PBXGroup;
 			children = (
 				B5D859E1293B4B5B00D89DD2 /* Notification */,
+				B5D859F0293B4B5B00D89DD2 /* History */,
+				B5D859F5293B4B5B00D89DD2 /* Adress */,
 				B5D859E6293B4B5B00D89DD2 /* Payment */,
 				B5D859EA293B4B5B00D89DD2 /* Favorite */,
 				B5D859EE293B4B5B00D89DD2 /* AccountSettings */,
-				B5D859F0293B4B5B00D89DD2 /* History */,
-				B5D859F5293B4B5B00D89DD2 /* Adress */,
 			);
 			path = ProfileSettingsItemView;
 			sourceTree = "<group>";
@@ -313,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D859E7293B4B5B00D89DD2 /* Cell */,
-				B5D859E9293B4B5B00D89DD2 /* PaymentViewController.swift */,
+				B5D85A3E293B4E7900D89DD2 /* Controller */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -329,7 +320,7 @@
 		B5D859EA293B4B5B00D89DD2 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				B5D859EB293B4B5B00D89DD2 /* FavoriteViewController.swift */,
+				B5D85A3D293B4E4C00D89DD2 /* Controller */,
 				B5D859EC293B4B5B00D89DD2 /* Cell */,
 			);
 			path = Favorite;
@@ -346,7 +337,7 @@
 		B5D859EE293B4B5B00D89DD2 /* AccountSettings */ = {
 			isa = PBXGroup;
 			children = (
-				B5D859EF293B4B5B00D89DD2 /* AccountSettingsViewController.swift */,
+				B5D85A3F293B4E7F00D89DD2 /* Controller */,
 			);
 			path = AccountSettings;
 			sourceTree = "<group>";
@@ -392,13 +383,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		B5D85A34293B4BFC00D89DD2 /* Profile */ = {
+		B5D85A34293B4BFC00D89DD2 /* ProfileTab */ = {
 			isa = PBXGroup;
 			children = (
-				B5D859D9293B4B5A00D89DD2 /* Main */,
-				B5D859E0293B4B5B00D89DD2 /* ProfileSettingsItemView */,
+				B5D859BF293B499A00D89DD2 /* Login */,
+				B5D85A40293B4ED400D89DD2 /* Profile */,
 			);
-			path = Profile;
+			path = ProfileTab;
 			sourceTree = "<group>";
 		};
 		B5D85A35293B4CBE00D89DD2 /* Cell */ = {
@@ -463,6 +454,55 @@
 				B5D859DC293B4B5A00D89DD2 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5D85A3D293B4E4C00D89DD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D859EB293B4B5B00D89DD2 /* FavoriteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D85A3E293B4E7900D89DD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D859E9293B4B5B00D89DD2 /* PaymentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D85A3F293B4E7F00D89DD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D859EF293B4B5B00D89DD2 /* AccountSettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D85A40293B4ED400D89DD2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B5D859D9293B4B5A00D89DD2 /* Main */,
+				B5D859E0293B4B5B00D89DD2 /* ProfileSettingsItemView */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B5D85A41293B4F0B00D89DD2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B5B98D9A290C24090090AC35 /* MainTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B5D85A42293B4F1A00D89DD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5B98DA2290C24CB0090AC35 /* CartViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

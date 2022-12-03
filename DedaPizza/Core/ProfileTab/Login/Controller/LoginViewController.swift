@@ -27,6 +27,7 @@ final class LoginViewController: UIViewController {
         setUpDelegates()
         setUpTargets()
         setUpBindings()
+        animateFormChange(isDidChangeFormAnimation: false)
     }
     
     override func viewDidLayoutSubviews() {
@@ -78,12 +79,12 @@ final class LoginViewController: UIViewController {
                 }
                 .store(in: &cancellables)
             
-            loginViewModel.$isSwitchedToRegistrationForm
-                .receive(on: RunLoop.main)
-                .sink { [weak self] isSwitched in
-                    self?.animateFormChange(isDidChangeFormAnimation: isSwitched)
-                }
-                .store(in: &cancellables)
+//            loginViewModel.$isSwitchedToRegistrationForm
+//                .receive(on: RunLoop.main)
+//                .sink { [weak self] isSwitched in
+//                    self?.animateFormChange(isDidChangeFormAnimation: isSwitched)
+//                }
+//                .store(in: &cancellables)
             
             loginViewModel.$inlineValidationError
                 .receive(on: RunLoop.main)
@@ -158,17 +159,21 @@ extension LoginViewController {
     @objc func didTapLoginLabel() {
         guard loginViewModel.isSwitchedToRegistrationForm else { return }
         loginViewModel.isSwitchedToRegistrationForm = false
+        animateFormChange(isDidChangeFormAnimation: false)
         print("tap")
     }
     
     @objc func didTapRegistrationLabel() {
         guard !loginViewModel.isSwitchedToRegistrationForm else { return }
         loginViewModel.isSwitchedToRegistrationForm = true
+        animateFormChange(isDidChangeFormAnimation: true)
         print("tap register")
     }
     
     @objc func didTapLoginButton() {
         print("tap login")
+        let vc = ProfileViewController()
+        navigationController?.setViewControllers([vc], animated: true)
         loginViewModel.login()
     }
     

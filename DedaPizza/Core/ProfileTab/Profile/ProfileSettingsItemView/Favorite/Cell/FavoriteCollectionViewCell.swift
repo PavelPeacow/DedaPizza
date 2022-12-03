@@ -15,7 +15,7 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
     
     lazy var itemImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "pizz")
+        image.image = UIImage(named: "pizza")
         image.contentMode = .scaleAspectFit
         image.translatesAutoresizingMaskIntoConstraints = false
         return image

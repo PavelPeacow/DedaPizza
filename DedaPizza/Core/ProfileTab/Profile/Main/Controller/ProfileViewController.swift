@@ -64,6 +64,9 @@ extension ProfileViewController: UITableViewDelegate {
         print(indexPath)
         if let view = SettingItems.allCases[indexPath.row].selectedScreen() {
             navigationController?.pushViewController(view, animated: true)
+        } else {
+            let vc = LoginViewController()
+            navigationController?.setViewControllers([vc], animated: true)
         }
         
     }

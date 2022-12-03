@@ -20,7 +20,7 @@ class HistoryCollectionViewCell: UICollectionViewCell {
     
     private lazy var image: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "pizz")
+        image.image = UIImage(named: "pizza")
         image.contentMode = .scaleAspectFit
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
