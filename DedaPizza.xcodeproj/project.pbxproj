@@ -46,6 +46,7 @@
 		B5D85A55293B93C400D89DD2 /* RestorantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A54293B93C400D89DD2 /* RestorantsViewController.swift */; };
 		B5D85A57293B93CF00D89DD2 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */; };
 		B5D85A59293B93DB00D89DD2 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */; };
+		B5D85A5B293B9C0100D89DD2 /* ConditionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		B5D85A54293B93C400D89DD2 /* RestorantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorantsViewController.swift; sourceTree = "<group>"; };
 		B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -593,9 +595,26 @@
 		B5D85A51293B936900D89DD2 /* Condition */ = {
 			isa = PBXGroup;
 			children = (
-				B5D85A52293B93B100D89DD2 /* ConditionViewController.swift */,
+				B5D85A5D293B9C0A00D89DD2 /* Controller */,
+				B5D85A5C293B9C0400D89DD2 /* Cell */,
 			);
 			path = Condition;
+			sourceTree = "<group>";
+		};
+		B5D85A5C293B9C0400D89DD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B5D85A5D293B9C0A00D89DD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A52293B93B100D89DD2 /* ConditionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -672,6 +691,7 @@
 				B5D85A44293B52D100D89DD2 /* AboutView.swift in Sources */,
 				B5D859CC293B499A00D89DD2 /* CustomTextField.swift in Sources */,
 				B5D85A24293B4B5B00D89DD2 /* HistoryCollectionViewCell.swift in Sources */,
+				B5D85A5B293B9C0100D89DD2 /* ConditionCollectionViewCell.swift in Sources */,
 				B5D85A1D293B4B5B00D89DD2 /* NotificationCollectionViewCell.swift in Sources */,
 				B5D85A57293B93CF00D89DD2 /* ContactViewController.swift in Sources */,
 				B5D85A19293B4B5B00D89DD2 /* ProfileViewModel.swift in Sources */,
