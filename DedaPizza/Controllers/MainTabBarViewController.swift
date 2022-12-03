@@ -12,11 +12,11 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let recipe = UINavigationController(rootViewController: RecipeViewController())
+        let recipe = UINavigationController(rootViewController: AboutViewController())
         let promo = UINavigationController(rootViewController: PromoViewController())
         let home = UINavigationController(rootViewController: HomeViewController())
         let cart = UINavigationController(rootViewController: CartViewController())
-        let profile = UINavigationController(rootViewController: ProfileViewController())
+        let profile = UINavigationController(rootViewController: LoginViewController())
         
         recipe.tabBarItem.title = "Рецепты"
         promo.tabBarItem.title = "Акции"

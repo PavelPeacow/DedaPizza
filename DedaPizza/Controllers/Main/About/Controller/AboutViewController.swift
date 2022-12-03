@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecipeViewController: UIViewController {
+class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
