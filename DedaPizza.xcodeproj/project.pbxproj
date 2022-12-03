@@ -39,6 +39,13 @@
 		B5D85A23293B4B5B00D89DD2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D859F2293B4B5B00D89DD2 /* HistoryViewController.swift */; };
 		B5D85A24293B4B5B00D89DD2 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D859F4293B4B5B00D89DD2 /* HistoryCollectionViewCell.swift */; };
 		B5D85A25293B4B5B00D89DD2 /* AdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D859F7293B4B5B00D89DD2 /* AdressViewController.swift */; };
+		B5D85A44293B52D100D89DD2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A43293B52D100D89DD2 /* AboutView.swift */; };
+		B5D85A47293B536F00D89DD2 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A46293B536F00D89DD2 /* AboutViewModel.swift */; };
+		B5D85A4A293B928A00D89DD2 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A49293B928A00D89DD2 /* AboutTableViewCell.swift */; };
+		B5D85A53293B93B100D89DD2 /* ConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A52293B93B100D89DD2 /* ConditionViewController.swift */; };
+		B5D85A55293B93C400D89DD2 /* RestorantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A54293B93C400D89DD2 /* RestorantsViewController.swift */; };
+		B5D85A57293B93CF00D89DD2 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */; };
+		B5D85A59293B93DB00D89DD2 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +83,13 @@
 		B5D859F2293B4B5B00D89DD2 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B5D859F4293B4B5B00D89DD2 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		B5D859F7293B4B5B00D89DD2 /* AdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressViewController.swift; sourceTree = "<group>"; };
+		B5D85A43293B52D100D89DD2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B5D85A46293B536F00D89DD2 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		B5D85A49293B928A00D89DD2 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		B5D85A52293B93B100D89DD2 /* ConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionViewController.swift; sourceTree = "<group>"; };
+		B5D85A54293B93C400D89DD2 /* RestorantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorantsViewController.swift; sourceTree = "<group>"; };
+		B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +244,8 @@
 		B5D859D7293B4AB900D89DD2 /* AboutTab */ = {
 			isa = PBXGroup;
 			children = (
-				B5D85A39293B4CD400D89DD2 /* Controller */,
+				B5D85A4C293B931A00D89DD2 /* About */,
+				B5D85A4D293B932A00D89DD2 /* AboutItemView */,
 			);
 			path = AboutTab;
 			sourceTree = "<group>";
@@ -505,6 +520,84 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B5D85A45293B52D400D89DD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A43293B52D100D89DD2 /* AboutView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5D85A48293B537800D89DD2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A46293B536F00D89DD2 /* AboutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5D85A4B293B928F00D89DD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A49293B928A00D89DD2 /* AboutTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B5D85A4C293B931A00D89DD2 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A4B293B928F00D89DD2 /* Cell */,
+				B5D85A45293B52D400D89DD2 /* View */,
+				B5D85A39293B4CD400D89DD2 /* Controller */,
+				B5D85A48293B537800D89DD2 /* ViewModel */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		B5D85A4D293B932A00D89DD2 /* AboutItemView */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A51293B936900D89DD2 /* Condition */,
+				B5D85A50293B936600D89DD2 /* Restorants */,
+				B5D85A4F293B936400D89DD2 /* Contact */,
+				B5D85A4E293B936200D89DD2 /* AboutApp */,
+			);
+			path = AboutItemView;
+			sourceTree = "<group>";
+		};
+		B5D85A4E293B936200D89DD2 /* AboutApp */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */,
+			);
+			path = AboutApp;
+			sourceTree = "<group>";
+		};
+		B5D85A4F293B936400D89DD2 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		B5D85A50293B936600D89DD2 /* Restorants */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A54293B93C400D89DD2 /* RestorantsViewController.swift */,
+			);
+			path = Restorants;
+			sourceTree = "<group>";
+		};
+		B5D85A51293B936900D89DD2 /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A52293B93B100D89DD2 /* ConditionViewController.swift */,
+			);
+			path = Condition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,9 +669,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D85A21293B4B5B00D89DD2 /* FavoriteCollectionViewCell.swift in Sources */,
+				B5D85A44293B52D100D89DD2 /* AboutView.swift in Sources */,
 				B5D859CC293B499A00D89DD2 /* CustomTextField.swift in Sources */,
 				B5D85A24293B4B5B00D89DD2 /* HistoryCollectionViewCell.swift in Sources */,
 				B5D85A1D293B4B5B00D89DD2 /* NotificationCollectionViewCell.swift in Sources */,
+				B5D85A57293B93CF00D89DD2 /* ContactViewController.swift in Sources */,
 				B5D85A19293B4B5B00D89DD2 /* ProfileViewModel.swift in Sources */,
 				B5B98D9B290C24090090AC35 /* MainTabBarViewController.swift in Sources */,
 				B5B98D9F290C24BA0090AC35 /* PromoViewController.swift in Sources */,
@@ -586,6 +681,7 @@
 				B5D85A25293B4B5B00D89DD2 /* AdressViewController.swift in Sources */,
 				B56F5150290E7D6A00449C6C /* CollectionViewCell.swift in Sources */,
 				B5D859CB293B499A00D89DD2 /* Validator.swift in Sources */,
+				B5D85A59293B93DB00D89DD2 /* AboutAppViewController.swift in Sources */,
 				B5D85A18293B4B5B00D89DD2 /* ProfileViewController.swift in Sources */,
 				B5D859CD293B499A00D89DD2 /* LoginViewModel.swift in Sources */,
 				B5D85A22293B4B5B00D89DD2 /* AccountSettingsViewController.swift in Sources */,
@@ -594,13 +690,17 @@
 				B5D85A17293B4B5B00D89DD2 /* ProfileView.swift in Sources */,
 				B5D85A1E293B4B5B00D89DD2 /* PaymentCollectionViewCell.swift in Sources */,
 				B5D85A20293B4B5B00D89DD2 /* FavoriteViewController.swift in Sources */,
+				B5D85A55293B93C400D89DD2 /* RestorantsViewController.swift in Sources */,
+				B5D85A53293B93B100D89DD2 /* ConditionViewController.swift in Sources */,
 				B5D859CE293B499A00D89DD2 /* RegistrationView.swift in Sources */,
 				B5B98D88290C226B0090AC35 /* SceneDelegate.swift in Sources */,
+				B5D85A47293B536F00D89DD2 /* AboutViewModel.swift in Sources */,
 				B5D85A23293B4B5B00D89DD2 /* HistoryViewController.swift in Sources */,
 				B5B98DA1290C24C40090AC35 /* HomeViewController.swift in Sources */,
 				B5D859D0293B499A00D89DD2 /* LoginViewController.swift in Sources */,
 				B5B98DA8290C37030090AC35 /* ProductCollectionViewCell.swift in Sources */,
 				B5D85A1F293B4B5B00D89DD2 /* PaymentViewController.swift in Sources */,
+				B5D85A4A293B928A00D89DD2 /* AboutTableViewCell.swift in Sources */,
 				B5D85A1C293B4B5B00D89DD2 /* NotificationViewController.swift in Sources */,
 				B5D859CF293B499A00D89DD2 /* LoginView.swift in Sources */,
 				B5D85A1B293B4B5B00D89DD2 /* SettingsTableViewCell.swift in Sources */,
