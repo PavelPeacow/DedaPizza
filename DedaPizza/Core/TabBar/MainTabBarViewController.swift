@@ -12,25 +12,25 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let recipe = UINavigationController(rootViewController: AboutViewController())
-        let promo = UINavigationController(rootViewController: PromoViewController())
         let home = UINavigationController(rootViewController: HomeViewController())
+        let promo = UINavigationController(rootViewController: PromoViewController())
         let cart = UINavigationController(rootViewController: CartViewController())
         let profile = UINavigationController(rootViewController: LoginViewController())
+        let about = UINavigationController(rootViewController: AboutViewController())
         
-        recipe.tabBarItem.title = "Рецепты"
-        promo.tabBarItem.title = "Акции"
         home.tabBarItem.title = "Главное"
+        promo.tabBarItem.title = "Акции"
         cart.tabBarItem.title = "Корзина"
         profile.tabBarItem.title = "Профиль"
+        about.tabBarItem.title = "Еще"
         
-        recipe.tabBarItem.image = UIImage(named: "recipe")
-        promo.tabBarItem.image = UIImage(named: "promo")
         home.tabBarItem.image = UIImage(named: "home")
-        cart.tabBarItem.image = UIImage(named: "cart")
-        profile.tabBarItem.image = UIImage(named: "profile")
+        promo.tabBarItem.image = UIImage(named: "promo")
+        cart.tabBarItem.image = UIImage(systemName: "cart.fill")
+        profile.tabBarItem.image = UIImage(systemName: "person.fill")
+        about.tabBarItem.image = UIImage(systemName: "line.3.horizontal")
         
-        setViewControllers([recipe, promo, home, cart, profile], animated: true)
+        setViewControllers([home, promo, cart, profile, about], animated: true)
         selectedIndex = 2
     }
     
