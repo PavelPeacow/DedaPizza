@@ -47,6 +47,7 @@
 		B5D85A57293B93CF00D89DD2 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */; };
 		B5D85A59293B93DB00D89DD2 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */; };
 		B5D85A5B293B9C0100D89DD2 /* ConditionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */; };
+		B5D85A5F293BB3CE00D89DD2 /* ProductItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A5E293BB3CE00D89DD2 /* ProductItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		B5D85A56293B93CF00D89DD2 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		B5D85A58293B93DB00D89DD2 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5D85A5E293BB3CE00D89DD2 /* ProductItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				B5B98DA0290C24C40090AC35 /* HomeViewController.swift */,
+				B5D85A5E293BB3CE00D89DD2 /* ProductItemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 				B5D85A53293B93B100D89DD2 /* ConditionViewController.swift in Sources */,
 				B5D859CE293B499A00D89DD2 /* RegistrationView.swift in Sources */,
 				B5B98D88290C226B0090AC35 /* SceneDelegate.swift in Sources */,
+				B5D85A5F293BB3CE00D89DD2 /* ProductItemViewController.swift in Sources */,
 				B5D85A47293B536F00D89DD2 /* AboutViewModel.swift in Sources */,
 				B5D85A23293B4B5B00D89DD2 /* HistoryViewController.swift in Sources */,
 				B5B98DA1290C24C40090AC35 /* HomeViewController.swift in Sources */,
