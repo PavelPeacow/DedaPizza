@@ -26,17 +26,69 @@ class HomeViewController: UIViewController {
         collection.register(ProductCollectionViewCell.self, forCellWithReuseIdentifier: ProductCollectionViewCell.identifier)
         return collection
     }()
+    
+    private let productCategoryAllBtn: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = .systemGray6
+        btn.layer.cornerRadius = 5
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Все", for: .normal)
+        btn.setImage(UIImage(named: "allCategory"), for: .normal)
+        return btn
+    }()
+    
+    private let productCategoryPizzaBtn: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = .systemGray6
+        btn.layer.cornerRadius = 5
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Пицца", for: .normal)
+        btn.setImage(UIImage(named: "pizzaCategory"), for: .normal)
+        return btn
+    }()
+    
+    private let productCategoryBurgerBtn: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = .systemGray6
+        btn.layer.cornerRadius = 5
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Бургеры", for: .normal)
+        btn.setImage(UIImage(named: "pizzaCategory"), for: .normal)
+        return btn
+    }()
+    
+    private let productCategoryDesertBtn: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = .systemGray6
+        btn.layer.cornerRadius = 5
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Десерты", for: .normal)
+        btn.setImage(UIImage(named: "desertCategory"), for: .normal)
+        return btn
+    }()
+        
+    lazy var stackView: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [productCategoryAllBtn, productCategoryPizzaBtn, productCategoryBurgerBtn, productCategoryDesertBtn])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.distribution = .fill
+        stack.spacing = 15
+        stack.alignment = .fill
+        stack.axis = .horizontal
+        return stack
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBackground
+        view.addSubview(stackView)
         view.addSubview(collectionView)
         
         setupNavigationBar()
         setupDelegates()
         
         setupTapGestures()
+        setConstraints()
     }
     
     private func setupNavigationBar() {
@@ -50,12 +102,7 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView.frame = view.bounds
-    }
-    
+        
     private func setupTapGestures() {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(logoTapped))
         pizzaLogo.addGestureRecognizer(gesture)
@@ -65,6 +112,26 @@ class HomeViewController: UIViewController {
         let alert = UIAlertController(title: "You loh", message: "why are you loh?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK😔", style: .cancel))
         present(alert, animated: true)
+    }
+    
+}
+
+extension HomeViewController {
+    
+    func setConstraints() {
+        NSLayoutConstraint.activate([
+            
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            stackView.heightAnchor.constraint(equalToConstant: 22),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5),
+            
+            collectionView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 22),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
     }
     
 }

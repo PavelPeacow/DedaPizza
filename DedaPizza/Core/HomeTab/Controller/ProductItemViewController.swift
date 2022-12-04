@@ -8,6 +8,8 @@
 import UIKit
 
 class ProductItemViewController: UIViewController {
+    
+    private lazy var didTapNavBarItem = false
 
     lazy var itemImage: UIImageView = {
         let image = UIImageView()
@@ -87,12 +89,25 @@ class ProductItemViewController: UIViewController {
         view.addSubview(itemImage)
         view.addSubview(roundedBackgound)
         roundedBackgound.addSubview(mainStackView)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "heart")?.withTintColor(.white, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(didTapFavoriteNavBtn))
 
         view.backgroundColor = .systemBackground
         setConstraints()
     }
 
 
+}
+
+extension ProductItemViewController {
+    
+    @objc func didTapFavoriteNavBtn() {
+        didTapNavBarItem.toggle()
+        let image = UIImage(systemName: didTapNavBarItem ? "heart.fill" : "heart")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        let item = UIBarButtonItem(image: image, style: .done, target: self, action: #selector(didTapFavoriteNavBtn))
+        navigationItem.rightBarButtonItem = item
+    }
+    
 }
 
 extension ProductItemViewController {

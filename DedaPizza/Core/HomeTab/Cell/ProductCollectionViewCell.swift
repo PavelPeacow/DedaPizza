@@ -21,46 +21,46 @@ class ProductCollectionViewCell: UICollectionViewCell {
     private let productTitle: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 16)
+        label.font = .systemFont(ofSize: 16, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Итальянская пицца"
         return label
     }()
     
     private let productSubtitle: UILabel = {
-         let label = UILabel()
+        let label = UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "AvenirNext-Regular", size: 14)
+        label.font = .systemFont(ofSize: 12)
+        label.textColor = .systemGray
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "мука, дрожжи сухие, вода, масло подсолнечное, соль, сахар, сыр твёрдый, колбаса, помидоры, кетчуп, перец болгарский красный, масло сливочное, лук зелёный"
         return label
     }()
     
     private let productPrice: UILabel = {
-         let label = UILabel()
+        let label = UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "AvenirNext-Italic", size: 16)
+        label.font = .systemFont(ofSize: 14, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "399 руб.\nза шт."
         return label
     }()
     
     private let productAddBtn: UIButton = {
-        var config = UIButton.Configuration.bordered()
-        config.baseBackgroundColor = UIColor(red: 0.033, green: 0.567, blue: 0.054, alpha: 1)
-        config.baseForegroundColor = .black
-        config.cornerStyle = .capsule
-        
-        let btn = UIButton(configuration: config)
+        let btn = UIButton()
+        btn.backgroundColor = .systemGreen
+        btn.layer.cornerRadius = 5
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("Добавить", for: .normal)
         return btn
     }()
-    
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        contentView.backgroundColor = UIColor(red: 0.183, green: 0.183, blue: 0.183, alpha: 1)
+        contentView.layer.cornerRadius = 15
+        
+        contentView.backgroundColor = .systemGray6
         contentView.addSubview(productTitle)
         contentView.addSubview(productImage)
         contentView.addSubview(productSubtitle)

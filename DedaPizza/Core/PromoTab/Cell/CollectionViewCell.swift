@@ -14,6 +14,9 @@ class CollectionViewCell: UICollectionViewCell {
     private let promoBanner: UIImageView = {
         let image = UIImageView(image: UIImage(named: "banner"))
         image.contentMode = .scaleToFill
+        image.clipsToBounds = true
+        image.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        image.layer.cornerRadius = 15
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -39,7 +42,8 @@ class CollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        contentView.backgroundColor = UIColor(red: 0.183, green: 0.183, blue: 0.183, alpha: 1)
+        contentView.backgroundColor = .systemGray6
+        contentView.layer.cornerRadius = 15
         
         contentView.addSubview(promoBanner)
         contentView.addSubview(promoTitle)

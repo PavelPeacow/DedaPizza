@@ -414,7 +414,7 @@
 		B5D85A35293B4CBE00D89DD2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B5B98D9E290C24BA0090AC35 /* PromoViewController.swift */,
+				B56F514F290E7D6A00449C6C /* CollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -439,7 +439,7 @@
 		B5D85A38293B4CCD00D89DD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B56F514F290E7D6A00449C6C /* CollectionViewCell.swift */,
+				B5B98D9E290C24BA0090AC35 /* PromoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
