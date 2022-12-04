@@ -49,6 +49,8 @@
 		B5D85A5B293B9C0100D89DD2 /* ConditionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */; };
 		B5D85A5F293BB3CE00D89DD2 /* ProductItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A5E293BB3CE00D89DD2 /* ProductItemViewController.swift */; };
 		B5D85A61293CAACA00D89DD2 /* CartItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A60293CAACA00D89DD2 /* CartItemCollectionViewCell.swift */; };
+		B5D85A66293CB5B900D89DD2 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A65293CB5B900D89DD2 /* PayViewController.swift */; };
+		B5D85A69293CC8BE00D89DD2 /* PayItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D85A68293CC8BE00D89DD2 /* PayItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		B5D85A5A293B9C0100D89DD2 /* ConditionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCollectionViewCell.swift; sourceTree = "<group>"; };
 		B5D85A5E293BB3CE00D89DD2 /* ProductItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewController.swift; sourceTree = "<group>"; };
 		B5D85A60293CAACA00D89DD2 /* CartItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5D85A65293CB5B900D89DD2 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		B5D85A68293CC8BE00D89DD2 /* PayItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,8 +263,8 @@
 		B5D859D8293B4AC300D89DD2 /* CartTab */ = {
 			isa = PBXGroup;
 			children = (
-				B5D85A62293CAACD00D89DD2 /* Cell */,
-				B5D85A42293B4F1A00D89DD2 /* Controller */,
+				B5D85A63293CB57B00D89DD2 /* Cart */,
+				B5D85A64293CB58300D89DD2 /* Pay */,
 			);
 			path = CartTab;
 			sourceTree = "<group>";
@@ -631,6 +635,40 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		B5D85A63293CB57B00D89DD2 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A62293CAACD00D89DD2 /* Cell */,
+				B5D85A42293B4F1A00D89DD2 /* Controller */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		B5D85A64293CB58300D89DD2 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A6A293CC8C000D89DD2 /* Cell */,
+				B5D85A67293CC8A900D89DD2 /* Controller */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		B5D85A67293CC8A900D89DD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A65293CB5B900D89DD2 /* PayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5D85A6A293CC8C000D89DD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5D85A68293CC8BE00D89DD2 /* PayItemCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -707,6 +745,7 @@
 				B5D85A24293B4B5B00D89DD2 /* HistoryCollectionViewCell.swift in Sources */,
 				B5D85A5B293B9C0100D89DD2 /* ConditionCollectionViewCell.swift in Sources */,
 				B5D85A1D293B4B5B00D89DD2 /* NotificationCollectionViewCell.swift in Sources */,
+				B5D85A69293CC8BE00D89DD2 /* PayItemCollectionViewCell.swift in Sources */,
 				B5D85A61293CAACA00D89DD2 /* CartItemCollectionViewCell.swift in Sources */,
 				B5D85A57293B93CF00D89DD2 /* ContactViewController.swift in Sources */,
 				B5D85A19293B4B5B00D89DD2 /* ProfileViewModel.swift in Sources */,
@@ -720,6 +759,7 @@
 				B5D85A18293B4B5B00D89DD2 /* ProfileViewController.swift in Sources */,
 				B5D859CD293B499A00D89DD2 /* LoginViewModel.swift in Sources */,
 				B5D85A22293B4B5B00D89DD2 /* AccountSettingsViewController.swift in Sources */,
+				B5D85A66293CB5B900D89DD2 /* PayViewController.swift in Sources */,
 				B5B98DA3290C24CB0090AC35 /* CartViewController.swift in Sources */,
 				B5D859C8293B499A00D89DD2 /* UITextField+Publisher.swift in Sources */,
 				B5D85A17293B4B5B00D89DD2 /* ProfileView.swift in Sources */,

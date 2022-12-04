@@ -49,6 +49,7 @@ class CartViewController: UIViewController {
         btn.setTitle("Перейти к оплате", for: .normal)
         btn.backgroundColor = .systemGreen
         btn.layer.cornerRadius = 5
+        btn.addTarget(self, action: #selector(didTapPayBtn), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
@@ -86,6 +87,15 @@ class CartViewController: UIViewController {
     private func setDelegates() {
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+}
+
+extension CartViewController {
+    
+    @objc func didTapPayBtn() {
+        let vc = PayViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
